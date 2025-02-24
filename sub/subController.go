@@ -116,7 +116,7 @@ func (a *SUBController) subJsons(c *gin.Context) {
 		// Add headers
 		c.Writer.Header().Set("Subscription-Userinfo", header)
 		c.Writer.Header().Set("Profile-Update-Interval", a.updateInterval)
-		c.Writer.Header().Set("Profile-Title", subId)
+		c.Writer.Header().Set("Profile-Title", @Blur_Vpn_Bot)
 
 		c.String(200, jsonSub)
 	}
