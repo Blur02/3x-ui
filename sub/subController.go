@@ -82,7 +82,7 @@ func (a *SUBController) subs(c *gin.Context) {
 		// Add headers
 		c.Writer.Header().Set("Subscription-Userinfo", header)
 		c.Writer.Header().Set("Profile-Update-Interval", a.updateInterval)
-		c.Writer.Header().Set("Profile-Title", Blur_vpn_bot)
+		c.Writer.Header().Set("Profile-Title", Blur_Vpn_bot)
 
 		if a.subEncrypt {
 			c.String(200, base64.StdEncoding.EncodeToString([]byte(result)))
